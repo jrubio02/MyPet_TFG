@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".DetallesAnimal">
+
+
+        <TextView
+            android:id="@+id/countFavs"
+            android:layout_width="58dp"
+            android:layout_height="21dp"
+            android:text="23"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.857"
+            app:layout_constraintStart_toEndOf="@+id/estrellaCount"
+            app:layout_constraintTop_toBottomOf="@+id/imagenAnimal"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <ImageView
+            android:id="@+id/estrellaCount"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.82"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenAnimal"
+            app:layout_constraintVertical_bias="0.02"
+            app:srcCompat="@drawable/estrella_vacia" />
+
+        <TextView
+            android:id="@+id/txtPerfilDueño"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver perfil"
+            android:textColor="#FF4331"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/lineaDivisoria"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.876"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/perroDescripcion"
+            app:layout_constraintVertical_bias="0.36"
+            />
+
+        <TextView
+            android:id="@+id/perroGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Género : Hembrasadsa "
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/perroTamaño"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.945" />
+
+        <TextView
+            android:id="@+id/perroEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="Edad : 1 año"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/info"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.739" />
+
+
+        <TextView
+            android:id="@+id/perroRaza"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Raza : bulldog"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/perroEdad"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.808" />
+
+        <TextView
+            android:id="@+id/perroTamaño"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="Tamaño : mediano"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/perroRaza"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.873" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosemi"
+            android:text="Información"
+            android:textAlignment="viewStart"
+            android:textColor="#FF4331"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/perroDescripcion"
+            app:layout_constraintVertical_bias="0.262" />
+
+        <TextView
+            android:id="@+id/perroDescripcion"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:maxWidth="300dp"
+            android:text="hola"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lineaDivisoria"
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#9E9E9E"
+            app:layout_constraintBottom_toTopOf="@+id/info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/perroDescripcion"
+            app:layout_constraintVertical_bias="0.888" />
+
+        <TextView
+            android:id="@+id/perroNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosemi"
+            android:text="Perro"
+            android:textAlignment="viewStart"
+            android:textColor="#FF4331"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/perroDescripcion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenAnimal"
+            app:layout_constraintVertical_bias="0.56" />
+
+        <ImageView
+            android:id="@+id/imagenAnimal"
+            android:layout_width="433dp"
+            android:layout_height="267dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/perrodetalle" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email dueño: a@a"
+            android:textColor="#5F5F5F"
+
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/lineaDivisoria"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/perroDescripcion"
+            app:layout_constraintTop_toBottomOf="@+id/perroDescripcion"
+            app:layout_constraintVertical_bias="0.36" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnFav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:backgroundTint="#FFF200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.915"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05"
+            app:srcCompat="@drawable/estrella_vacia" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnPapelera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:visibility="invisible"
+            app:backgroundTint="#FF4331"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.908"
+            app:srcCompat="@drawable/papelera" />
+
+        <ImageView
+            android:id="@+id/lapiz"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/perroDescripcion"
+            app:layout_constraintEnd_toStartOf="@+id/estrellaCount"
+            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintStart_toEndOf="@+id/perroNombre"
+            app:layout_constraintTop_toBottomOf="@+id/imagenAnimal"
+            app:layout_constraintVertical_bias="0.72"
+            app:srcCompat="@drawable/pencil" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
